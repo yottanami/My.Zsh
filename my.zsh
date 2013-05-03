@@ -17,5 +17,15 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
+setopt HIST_IGNORE_DUPS \
+    NO_HIST_BEEP \
+    PROMPT_SUBST \
+    NO_BEEP \
+    AUTO_CD \
+    CORRECT
+
+unsetopt SHARE_HISTORY
+
+cdpath=(~/src .)
 
 [[ -z "$PS1" ]] && return
