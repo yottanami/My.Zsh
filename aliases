@@ -17,45 +17,8 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
+alias p="python2.7"
+alias p3="python3.3"
 
-#[[ -z "$PS1" ]] && return
-
-# Set options
-setopt HIST_IGNORE_DUPS \
-    NO_HIST_BEEP \
-    PROMPT_SUBST \
-    NO_BEEP \
-    AUTO_CD \
-    CORRECT
-
-# unset options
-unsetopt SHARE_HISTORY
-
-
-# My.Zsh directory path
-myzsh=${MYZSH:-$HOME}
-
-# Load aliases
-. $myzsh/aliases
-
-# Load the theme and coloring
-autoload -U colors && colors
-
-tput colors; print $terminfo[colors]; print $termcap[Co]
-
-theme=${THEME:-$myzsh/themes/lxsameer.zsh-theme}
-. $theme
-
-fpath=($myzsh/lib/*.zsh(N) $fpath)
-
-# Autoload functions that have the executable bit on.
-
-for dirname in $fpath; do
-    fns=( $dirname/*~*~(N.x:t) )
-    (( ${#fns} )) && autoload $fns
-done
-
-
-project_path=${PROJECTS:-~/src}
-
-cdpath=($project_path $cdpath)
+alias r="ruby"
+alias rr="rials"

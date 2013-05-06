@@ -39,18 +39,18 @@ function spaces() {
 }
 function user_sign () {
     if [ $UID != 0 ]; then
-	echo "$FG[027]»"
+	echo "%F{027}»"
     else
-	echo "$FG[009]#"
+	echo "%F{009}#"
     fi
 }
 
 PROMPT='
-$FG[003]%~$FG[008]$(spaces) $(my_git_prompt_info)
-$(user_sign) $reset_color'
+%F{003}%~%F{008}$(spaces) $(my_git_prompt_info)
+$(user_sign) %f'
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX="$FG[002]["
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{002}["
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="$FG[003]*"
-ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[002]]"
+ZSH_THEME_GIT_PROMPT_DIRTY="%F{003}*"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%F{002}]"
