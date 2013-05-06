@@ -35,25 +35,23 @@ unsetopt SHARE_HISTORY
 # My.Zsh directory path
 myzsh=${MYZSH:-$HOME}
 
+fpath=($myzsh/lib/functions/{*.zsh,*.zwc}(N) $fpath)
+
+# Autoload functions that have the executable bit on.
+
+for lib ($myzsh/lib/*.zsh); do
+    source $lib
+done
+
 # Load aliases
 . $myzsh/aliases
 
 # Load the theme and coloring
 autoload -U colors && colors
 
-tput colors; print $terminfo[colors]; print $termcap[Co]
-
 theme=${THEME:-$myzsh/themes/lxsameer.zsh-theme}
 . $theme
 
-fpath=($myzsh/lib/*.zsh(N) $fpath)
-
-# Autoload functions that have the executable bit on.
-
-for dirname in $fpath; do
-    fns=( $dirname/*~*~(N.x:t) )
-    (( ${#fns} )) && autoload $fns
-done
 
 
 project_path=${PROJECTS:-~/src}

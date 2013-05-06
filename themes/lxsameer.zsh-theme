@@ -1,7 +1,7 @@
 # lxsameer.zsh-theme
 #
 # Author: @lxsameer <lxsameer@gnu.org>
-# Repo: https://github.com/lxsameer/oh-my-zsh
+# Repo: https://github.com/lxsameer/My.Zsh
 #
 # Created on:		Apr 10, 2012
 
@@ -20,9 +20,9 @@ function spaces() {
     if [ ${#git} != 0 ]; then
 	local clean=$(parse_git_dirty)
 	if [ ${#clean} != 0 ]; then
-	    (( git = ${#git} - 30 - ${#clean} + 1 ))
+	    (( git = ${#git} - 13 - ${#clean} + 1 ))
 	else
-	    (( git = ${#git} - 30 ))
+	    (( git = ${#git} - 13 ))
 	fi
     else
 	git=0
