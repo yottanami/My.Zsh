@@ -1,0 +1,13 @@
+MYZSH=$HOME/src/My.Zsh
+
+THEME=$MYZSH/themes/lxsameer.zsh-theme
+
+# Example aliases
+alias emacsw="emacs -nw"
+
+source $MYZSH/my.zsh
+PROJECTS=$HOME/src/
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+
+export PATH=/home/lxsameer/.gem/ruby/2.0.0/bin:$PATH
+export GEM_HOME=~/.gem/
