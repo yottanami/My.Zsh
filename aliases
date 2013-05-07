@@ -19,6 +19,13 @@
 
 alias p="python2.7"
 alias p3="python3.3"
+alias ac=". env/bin/activate"
 
 alias r="ruby"
-alias rr="rials"
+alias rr="rails"
+
+alias e="emacs"
+alias ew="emacs -nw"
+alias k="kuso"
+
+alias g="git"
