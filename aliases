@@ -29,3 +29,7 @@ alias ew="emacs -nw"
 alias k="kuso"
 
 alias g="git"
+alias gl="git pull"
+alias gp="git push"
+
+alias kff="kernel_find_file"
