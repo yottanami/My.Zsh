@@ -43,3 +43,14 @@ alias ...='cd ../..'
 alias -- -='cd -'
 
 alias _="sudo"
+alias ag="apt-get"
+alias agi="apt-get install"
+alias agr="apt-get remove"
+alias agp="apt-get purge"
+
+alias Ps="ps aux|grep --color"
+
+alias kl="kill"
+alias kla="killall"
+
+alias f="find . -iname "
