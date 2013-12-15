@@ -26,7 +26,8 @@ setopt HIST_IGNORE_DUPS \
     PROMPT_SUBST \
     NO_BEEP \
     AUTO_CD \
-    CORRECT
+    CORRECT \
+    SHARE_HISTORY
 
 # unset options
 unsetopt SHARE_HISTORY

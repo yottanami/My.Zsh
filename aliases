@@ -24,6 +24,8 @@ alias ac=". env/bin/activate"
 
 alias r="ruby"
 alias rr="rails"
+alias b="bundle"
+alias be="bundle exec"
 
 alias e="emacs"
 alias ew="emacs -nw"
@@ -44,6 +46,7 @@ alias -- -='cd -'
 
 alias _="sudo"
 alias ag="apt-get"
+alias agu="apt-get update"
 alias agi="apt-get install"
 alias agr="apt-get remove"
 alias agp="apt-get purge"
