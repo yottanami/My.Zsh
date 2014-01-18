@@ -1,4 +1,3 @@
-
 # -----------------------------------------------------------------------------
 #    My.Zsh - My personal zsh configuration
 #    Copyright (C) 2013 Sameer Rahmani <lxsameer@gnu.org>
@@ -37,6 +36,7 @@ alias gp="git push"
 
 alias kff="kernel_find_file"
 
+alias ls='ls --color'
 alias ll='ls -l'
 alias la='ls -lA'
 alias sl=ls
