@@ -29,9 +29,6 @@ setopt HIST_IGNORE_DUPS \
     CORRECT \
     SHARE_HISTORY
 
-# unset options
-unsetopt SHARE_HISTORY
-
 
 # My.Zsh directory path
 myzsh=${MYZSH:-$HOME}

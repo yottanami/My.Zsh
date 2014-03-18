@@ -57,3 +57,5 @@ alias kl="kill"
 alias kla="killall"
 
 alias f="find . -iname "
+
+alias c="cordova"
