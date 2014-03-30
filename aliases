@@ -47,9 +47,13 @@ alias -- -='cd -'
 alias _="sudo"
 alias ag="apt-get"
 alias agu="apt-get update"
-alias agi="apt-get install"
-alias agr="apt-get remove"
-alias agp="apt-get purge"
+alias agi="apt-get install "
+alias agr="apt-get remove "
+alias agp="apt-get purge "
+alias agd="apt-get dist-upgrade"
+alias ags="apt-cache search "
+alias agc="apt-cache "
+alias aps="aptitude search "
 
 alias Ps="ps aux|grep --color"
 
