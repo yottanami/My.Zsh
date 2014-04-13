@@ -63,3 +63,9 @@ alias kla="killall"
 alias f="find . -iname "
 
 alias c="cordova"
+
+alias m="mount "
+alias um="umount "
+
+alias ch="chmod "
+alias co="chown "
