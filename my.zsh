@@ -17,6 +17,9 @@
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 # -----------------------------------------------------------------------------
 
+current_path=$(cd -P -- "$(dirname -- "$0")" && printf '%s\n' "$(pwd -P)")
+current_file=$current_path/$(basename -- "$0")
+
 
 #[[ -z "$PS1" ]] && return
 
@@ -55,3 +58,6 @@ theme=${THEME:-$myzsh/themes/lxsameer.zsh-theme}
 project_path=${PROJECTS:-~/src}
 
 cdpath=($project_path $cdpath)
+
+
+source $current_path/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
