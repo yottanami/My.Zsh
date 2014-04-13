@@ -30,9 +30,9 @@ setopt HIST_IGNORE_DUPS \
     NO_BEEP \
     AUTO_CD \
     CORRECT \
-    SHARE_HISTORY
-
-
+    SHARE_HISTORY \
+    APPEND_HISTORY \
+    HIST_IGNORE_ALL_DUPS
 # My.Zsh directory path
 myzsh=${MYZSH:-$HOME}
 
@@ -59,5 +59,5 @@ project_path=${PROJECTS:-~/src}
 
 cdpath=($project_path $cdpath)
 
-
+# Load syntax highlighter
 source $current_path/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
