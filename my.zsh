@@ -24,6 +24,9 @@ current_file=$current_path/$(basename -- "$0")
 #[[ -z "$PS1" ]] && return
 
 # Set options
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=1000
+
 setopt HIST_IGNORE_DUPS \
     NO_HIST_BEEP \
     PROMPT_SUBST \
@@ -32,6 +35,7 @@ setopt HIST_IGNORE_DUPS \
     CORRECT \
     SHARE_HISTORY \
     APPEND_HISTORY \
+    INC_APPEND_HISTORY \
     HIST_IGNORE_ALL_DUPS
 # My.Zsh directory path
 myzsh=${MYZSH:-$HOME}
