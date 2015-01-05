@@ -33,15 +33,18 @@ alias k="kuso"
 alias g="git"
 alias gl="git pull"
 alias gp="git push"
+alias push="git_push"
+alias pull="git_pull"
 
 alias kff="kernel_find_file"
 
 alias ls='ls --color'
-alias ll='ls -l'
-alias la='ls -lA'
+alias ll='ls -lh'
+alias la='ls -lhA'
 alias sl=ls
 
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias -- -='cd -'
 
 alias _="sudo"

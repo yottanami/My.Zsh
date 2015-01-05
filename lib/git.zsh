@@ -127,6 +127,18 @@ function git_compare_version() {
   echo 1
 }
 
+function git_current_branch() {
+  git branch |grep "*"|cut -d ' ' -f 2
+}
+
+function git_push() {
+  git push origin `git_current_branch`
+}
+
+function git_pull() {
+  git pull origin `git_current_branch`
+}
+
 #this is unlikely to change so make it all statically assigned
 POST_1_7_2_GIT=$(git_compare_version "1.7.2")
 #clean up the namespace slightly by removing the checker function
